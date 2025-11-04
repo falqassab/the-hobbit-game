@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Hobbit: Ring Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen" class="screen">
+    <h1>🧙 The Hobbit: Ring Quest</h1>
+    <p>Collect the lost Rings of Power and avoid the dragons!</p>
+    <button id="start-btn">Start Adventure</button>
+  </div>
+
+  <!-- Story Screen -->
+  <div id="story-screen" class="screen hidden">
+    <h2 id="story-title"></h2>
+    <p id="story-text"></p>
+    <button id="start-level-btn">Begin Level</button>
+  </div>
+
+  <!-- Game Container -->
+  <div id="game-screen" class="screen hidden">
+    <div id="maze"></div>
+    <div id="score-board">
+      Rings Collected: <span id="score">0</span>
+    </div>
+  </div>
+
+  <!-- End Screen -->
+  <div id="end-screen" class="screen hidden">
+    <h2>🎉 Quest Complete!</h2>
+    <p>You have recovered all the Rings of Power!</p>
+    <button id="restart-btn">Play Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

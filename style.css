@@ -1,0 +1,88 @@
+body {
+  background-color: #1a1a1a;
+  color: #f0e6d2;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Maze layout */
+#maze {
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  grid-auto-rows: 40px;
+  gap: 2px;
+  position: relative;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+}
+
+.wall {
+  background-color: #4a3728;
+}
+
+.path {
+  background-color: #2b2b2b;
+}
+
+.ring {
+  background-color: gold;
+  border-radius: 50%;
+  box-shadow: 0 0 10px gold;
+}
+
+.player {
+  background-color: #8b4513;
+  border-radius: 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transition: top 0.1s, left 0.1s;
+}
+.enemy {
+  background-color: crimson;
+  border-radius: 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transition: top 0.2s linear, left 0.2s linear;
+  box-shadow: 0 0 10px red;
+}
+
+
+#score-board {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #ffd700;
+}
+
+button {
+  background-color: #8b4513;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #a0522d;
+}
